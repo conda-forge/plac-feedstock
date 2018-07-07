@@ -14,14 +14,15 @@ Summary: The smartest command line arguments parser in the world
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/plac-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/plac-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/plac-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/plac-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/plac-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/plac-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/plac-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/plac-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plac/badges/version.svg)](https://anaconda.org/conda-forge/plac)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plac/badges/downloads.svg)](https://anaconda.org/conda-forge/plac)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-plac-green.svg)](https://anaconda.org/conda-forge/plac) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/plac.svg)](https://anaconda.org/conda-forge/plac) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/plac.svg)](https://anaconda.org/conda-forge/plac) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/plac.svg)](https://anaconda.org/conda-forge/plac) |
 
 Installing plac
 ===============
