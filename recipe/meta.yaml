@@ -1,9 +1,8 @@
 {% set name = "plac" %}
-{% set version = "0.9.6" %}
+{% set version = "1.0.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ba3f719a018175f0a15a6b04e6cc79c25fd563d348aacd320c3644d2a9baf89b" %}
-{% set build = 1 %}
+{% set hash = "b03f967f535b3bf5a71b191fa5eb09872a5cfb1e3b377efc4138995e10ba36d7" %}
 
 package:
   name: {{ name|lower }}
@@ -11,19 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
   noarch: python
-  number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
 
   run:
     - python
