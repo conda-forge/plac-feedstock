@@ -1,8 +1,7 @@
 {% set name = "plac" %}
-{% set version = "1.0.0" %}
+{% set version = "1.2.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "b03f967f535b3bf5a71b191fa5eb09872a5cfb1e3b377efc4138995e10ba36d7" %}
+{% set hash = "ca03587234e5bdd2a3fa96f19a04a01ebb5b0cd66d48ecb5a54d42bc9b287320" %}
 
 package:
   name: {{ name|lower }}
@@ -11,12 +10,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -34,8 +33,9 @@ about:
   home: https://micheles.github.io/plac/
   # license_file: No license yet - see https://github.com/micheles/plac/issues/26
   license: BSD 2-Clause
+  license_file: LICENSE.txt
   license_family: BSD
-  summary: 'The smartest command line arguments parser in the world'
+  summary: The smartest command line arguments parser in the world
   doc_url: https://micheles.github.io/plac/
   dev_url: https://github.com/micheles/plac
 
