@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://micheles.github.io/plac/
-  # license_file: No license yet - see https://github.com/micheles/plac/issues/26
+  license_file: LICENSE.txt
   license: BSD 2-Clause
   license_family: BSD
   summary: 'The smartest command line arguments parser in the world'
