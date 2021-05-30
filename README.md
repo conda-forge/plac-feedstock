@@ -3,7 +3,7 @@ About plac
 
 Home: https://micheles.github.io/plac/
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plac-feedstock/blob/master/LICENSE.txt)
 
