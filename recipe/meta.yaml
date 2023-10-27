@@ -1,5 +1,5 @@
 {% set name = "plac" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 334864447ab7c43d2a0700d9387f30cff4843a67c02e65b29854705922b43357
+  sha256: 8276d038466f22210ca4f7fa0b270473bea2ec85fff495de179f56934372d5fa
 
 build:
   noarch: python
