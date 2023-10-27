@@ -6,38 +6,36 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/plac-{{ version }}.tar.gz
   sha256: 8276d038466f22210ca4f7fa0b270473bea2ec85fff495de179f56934372d5fa
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
     - python >=3.6
     - pip
-
   run:
     - python >=3.6
 
 test:
   imports:
     - plac
+    - plac_core
+    - plac_ext
   commands:
     - pip check
   requires:
     - pip
 
 about:
-  home: https://micheles.github.io/plac/
-  license_file: LICENSE.txt
-  license: BSD-2-Clause
-  license_family: BSD
+  home: https://github.com/ialbert/plac
   summary: The smartest command line arguments parser in the world
-  doc_url: https://micheles.github.io/plac/
-  dev_url: https://github.com/micheles/plac
+  license: BSD-2-Clause
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:

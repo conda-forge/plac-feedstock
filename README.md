@@ -3,15 +3,11 @@ About plac-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plac-feedstock/blob/main/LICENSE.txt)
 
-Home: https://micheles.github.io/plac/
+Home: https://github.com/ialbert/plac
 
 Package license: BSD-2-Clause
 
 Summary: The smartest command line arguments parser in the world
-
-Development: https://github.com/micheles/plac
-
-Documentation: https://micheles.github.io/plac/
 
 Current build status
 ====================
