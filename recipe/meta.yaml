@@ -26,12 +26,10 @@ test:
     - plac
     - plac_core
     - plac_ext
-    - plac_tk
   commands:
     - pip check
   requires:
     - pip
-    - tk
 
 about:
   home: https://github.com/ialbert/plac
