@@ -1,13 +1,13 @@
 {% set name = "plac" %}
-{% set version = "1.4.5" %}
+{% set version = "1.4.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/plac-{{ version }}.tar.gz
-  sha256: 5f05bf85235c017fcd76c73c8101d4ff8e96beb3dc58b9a37de49cac7de82d14
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/plac-{{ version }}.tar.gz
+  sha256: 86a50abd40c5a6ea9695b45a1f08637e744e0a57249c24d1593cad9eda1f8aac
 
 build:
   noarch: python
