@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: plac
-  version: "1.4.6"
+  version: "1.4.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/plac-${{ version }}.tar.gz
-  sha256: 86a50abd40c5a6ea9695b45a1f08637e744e0a57249c24d1593cad9eda1f8aac
+  sha256: 957ffbab8ea8ab8c0b9f2694daa2a95f3560151cd162bcbc91e97ff94d45c4f9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
